@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 1em;
+}
+#contenido {
+    background-color: rgb(184, 243, 243);
+    width: min( 60em, 100% );
+    margin: 1em auto;
+    border-radius: .1em;
+    box-shadow: 0px 5px 15px 0px rgb(21, 205, 246);
+    padding: 1em 2em;
+}
+#registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#registro label {
+    margin: .3em 0;
+}
+
+.label-registro {
+    border: 1px solid;
+    height: 2em;
+    width: 10em;
+}
+footer {
+    margin-top: 6em;
+    background-color: rgb(37, 202, 208);
+    text-align: center;
+}
+#btnCalcular {
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding: .5em;
+    border-radius: .2em;
+    margin: 1em 0 0em 0em;
+    box-shadow: 0px 5px 15px 0px rgb(0, 166, 255);
+}
+#btnCalcular:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    color: black;
+    box-shadow: 0px 5px 15px 0px rgb(21, 205, 246);
+}
+#btnRegistro {
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding: .5em;
+    border-radius: .2em;
+    margin: 1em 0 0em 0em;
+    box-shadow: 0px 5px 15px 0px rgb(0, 166, 255);
+}
+#btnRegistro:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    color: black;
+    box-shadow: 0px 5px 15px 0px rgb(21, 205, 246);
+}
+#btnBorrar {
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding: .5em;
+    border-radius: .2em;
+    margin: 1em 0 0em 0em;
+    box-shadow: 0px 5px 15px 0px rgb(0, 166, 255);
+}
+#btnBorrar:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    color: black;
+    box-shadow: 0px 5px 15px 0px rgb(21, 205, 246);
+}
