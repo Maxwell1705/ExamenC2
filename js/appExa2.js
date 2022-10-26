@@ -47,3 +47,12 @@ function calcular(){
     comisionx.innerHTML=(subtotal*0.03).toFixed(2);
     totalx.innerHTML=(subtotal-(subtotal*0.03)).toFixed(2); 
  }
+ function borrar(){
+    let subtotalx=document.getElementById('subtotalx');
+    let comisionx=document.getElementById('comisionx');
+    let totalx=document.getElementById('totalx');
+
+    subtotalx.innerHTML="";
+    comisionx.innerHTML="";
+    totalx.innerHTML="";
+}
