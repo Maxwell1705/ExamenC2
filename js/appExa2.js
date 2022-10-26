@@ -38,3 +38,12 @@ function calcular(){
 
     return subtotal;
  }
+ function registrar(subtotal){
+    var subtotalx=document.getElementById('subtotalx');
+    var comisionx=document.getElementById('comisionx');
+    var totalx=document.getElementById('totalx');
+
+    subtotalx.innerHTML=subtotal.toFixed(2);
+    comisionx.innerHTML=(subtotal*0.03).toFixed(2);
+    totalx.innerHTML=(subtotal-(subtotal*0.03)).toFixed(2); 
+ }
