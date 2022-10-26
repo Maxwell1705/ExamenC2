@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/exaC2.css">
+    <script src="/js/appExa2.js"></script>
+    <title>Examen Corte 2</title>
 </head>
 <body>
-    
+    <header>
+    <h1>CASH</h1>
+    </header>
+    <hr>
+    <div id="contenido">
+    <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+    <label for="">Moneda de origen</label>
+    <select required name="monedaOrigen" id="monedaOrigen" placeholder="Moneda Origen">
+        <option value="1">Peso mexicano</option>
+        <option value="2">Dolar estadounidense</option>
+        <option value="3">Euro</option>
+        <option value="4">Dolar Canadiense</option>
+    </select>
+    <label for="">Moneda de destino</label>
+    <select name="monedaDestino" id="monedaDestino">
+        <option value="1">Peso mexicano</option>
+        <option value="2">Dolar estadounidense</option>
+        <option value="3">Euro</option>
+        <option value="4">Dolar Canadiense</option>
+
+    </select>
+    <input type="number" id="subtotal" name="subtotal" placeholder="Subtotal">
+    <br>
+    <input type="number" id="Tcomision" name="Tcomision" placeholder="Total comision">
+    <input type="number" id="Tpagar" name="Tpagar" placeholder="Total a pagar">
+    <button id="btnCalcular" onclick="calcular()">Calcular</button>
+    <button id="btnRegistro" onclick="registrar(calcular())">Registro</button>
+    <br>
+    <br>    
+    <div id="registro">
+        <label class="label-registro" id="subtotalx"></label>
+        <label class="label-registro" id="comisionx"></label>
+        <label class="label-registro" id="totalx"></label>
+        <button id="btnBorrar" onclick="borrar()">Borrar</button>
+    </div>
+</div>
 </body>
+<footer>Maximiliano Contreras Cepeda - 26 de octubre del 2022</footer>
 </html>
